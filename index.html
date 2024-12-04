@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="grease.jpeg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle">  Grease </h2>
+  <p id="albumDescription"> Lançado em 1978, Grease é a trilha sonora oficial do icônico filme musical que estrelou John Travolta e Olivia Newton-John. O álbum captura a energia vibrante e a atmosfera nostálgica dos anos 50, mesclando rock 'n' roll com música pop e do estilo do próprio musical. As faixas são uma mistura de números animados e baladas românticas, que refletem a juventude e o espírito rebelde da época, além de explorarem temas de amor e diversão. A música "You're the One That I Want", com as vozes de Travolta e Newton-John, se tornou um dos maiores sucessos do álbum, além de "Summer Nights" e "Hopelessly Devoted to You", que se tornaram clássicos. A produção do disco, que mistura arranjos orquestrais com guitarras elétricas e batidas dançantes, ajudou a consolidar Grease como um dos álbuns de trilha sonora mais vendidos de todos os tempos. O álbum não só revigorou o interesse pelo rock dos anos 50, como também marcou a década de 70 com sua vibração alegre e cativante. </p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> Grease -
+    Summer Nights (John Travolta & Olivia Newton-John) -
+    Hopelessly Devoted to You (Olivia Newton-John) -
+    You're the One That I Want (John Travolta & Olivia Newton-John) -
+    Sandy (John Travolta) -
+    Beauty School Dropout (Frankie Avalon) -
+    Look at Me, I'm Sandra Dee (Stockard Channing).
+    <p id="albumDescription"> <strong>Lado 2:</strong> Greased Lightnin' (John Travolta) -
+        It's Raining on Prom Night (Cindy Bullens) -
+        Fever (John Travolta) -
+        Shakin' at the High School Hop (Sha Na Na) -
+        Mooning (Stockard Channing & Cast) -
+        Rock 'n' Roll Party Queen (Louis St. Louis) -
+        There Are Worse Things I Could Do (Stockard Channing).</p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
